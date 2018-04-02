@@ -1,0 +1,17 @@
+Jarlin Almanzar									Date:11/20/16
+CS 111	    									Project
+					design
+
+Amount of Players: Two-Players
+Choice: A player can choose their color of their checkers, they also have to decide who goes first
+
+Game Layout: 7-column by 6-rows
+	Note: A user may try to put a checker into an area that doesn’t exist or is already in used
+
+Checkers: 21 Checkers (42 in total) for each player (Ex: 21 Red and 21 Black), they also drop vertically into the lowest part of the column available
+	Checkers drop into a position and not into an exact space
+	Note: If all checkers are used the programs stops, checks if there’s a winner or a draw
+	      If a user wins the remainder of checkers won’t matter
+
+Winning Condition: Get 4 of the same colors next to each (Horizontally, Vertically, Diagonally)
+ 	Results: Red wins, or Black wins, or it’s a draw

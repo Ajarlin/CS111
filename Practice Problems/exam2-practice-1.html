@@ -1,0 +1,109 @@
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta http-equiv="Content-Style-Type" content="text/css">
+<title></title>
+<style type="text/css">body { padding: 5px !important; }
+</style>
+<br />
+<title></title>
+<center>
+<h1>Exam 2 Practice Assignment</h1>
+</center>
+
+<h2>Overview</h2>
+This is a set of problems to use to prepare for Exam 2. <b>It is not a &quot;practice exam&quot;.</b> The actual exam will not be this length or have this many questions.
+
+<p><b>You will NOT hand in any files.</b> This assignment is only practice for Exam 2.</p>
+
+<p>For each problem, you should:</p>
+
+<ul>
+	<li>determine the inputs, outputs, and error conditions</li>
+	<li>construct an algorithm</li>
+	<li>code your algorithm in Java</li>
+	<li>construct a set of test cases and use them to test <b>and fix</b> your program</li>
+</ul>
+
+<h2>Problems</h2>
+
+<h3>Problem 1</h3>
+
+<p>Your program should take a string that has been encoded using a &quot;secret&quot; code, and decode it. The code works as follows:</p>
+
+<ul>
+	<li>Each letter is decoded using the letter immediately preceding it in the alphabet. &quot;b&quot; becomes &quot;a&quot;, &quot;c&quot; becomes &quot;b&quot;, etc.</li>
+	<li>The letter &quot;a&quot; becomes &quot;z&quot;.</li>
+	<li>Each digit is decoded using the preceding digit. &quot;1&quot; becomes &quot;0&quot;, &quot;2&quot; becomes &quot;1&quot;, etc.</li>
+	<li>The digit &quot;0&quot; becomes &quot;9&quot;.</li>
+	<li>Characters that are neither letters nor digits are unchanged.</li>
+</ul>
+
+<p>Regardless of whether the input string contains upper- or lowercase characters, the output (one string) should be in all lowercase.</p>
+
+<p>Example:</p>
+
+<pre>
+java Cipher
+
+NFFU NF BU 23 JO UIF CFMM UPXFS
+
+RESULT: &quot;meet me at 12 in the bell tower&quot;
+</pre>
+
+<h3>Problem 2</h3>
+
+<p>Given an array of 3 Book titles, alphabetize these titles, ignoring the word &quot;the&quot; if it appears at the beginning of a title. Print the <b>full names</b> of the books (three strings, including an inital &quot;the&quot; if present) in alphabetical order. Do not make any assumptions about the case (uppercase/lowercase) of the input. However, it does not matter whether your output is in uppercase or lowercase.</p>
+
+<p>Example:<br />
+where titles = { &quot;Hamlet&quot;, &quot;The Great Gatsby&quot;, &quot;Great Expectations&quot;}</p>
+
+<pre>
+java Titles
+
+
+RESULT: &quot;Great Expectations&quot;
+RESULT: &quot;The Great Gatsby&quot;
+RESULT: &quot;Hamlet&quot;
+</pre>
+
+<h3>Problem 3</h3>
+
+<p>Ask the user for a sentence. Output a sentence containing the same words, but in reverse order. You may assume that the input sentence contains no punctuation except for a period at the end. The output sentence should be properly capitalized and ended with a period.</p>
+
+<pre>
+java ReverseWords
+
+The quick brown fox jumps over the lazy dog.
+
+RESULT: &quot;Dog lazy the over jumps fox brown quick the.&quot;
+</pre>
+
+<h3>Problem 4</h3>
+Take the programs you wrote for Problems 1, 2, and 3, as well as the programs you wrote for Assignments 2, 3, and 4. Convert these programs into <i>methods</i> that are intended to be invoked by another program. Write these methods in a new module.
+
+<p>Test your methods by writing a simple driver program that invokes each method and prints its return value.</p>
+
+<h3>Problem 5</h3>
+Write a program that asks the user for a list of people&#39;s names and birthdays. Birthdays should be input as two numbers, month and day. Use arrays to store this information.&nbsp; Display a menu that offers the following choices:
+
+<ul>
+	<li>Given a person&#39;s name, report their birthday.</li>
+	<li>Given a month, report all people whose birthdays fall in that month.</li>
+	<li>Report all sets of people who happen to have the same birthday.</li>
+</ul>
+<!--
+<h3>Problem 6</h3>
+Write a program that keeps track of P.O. boxes at the post office. Ask the user how many P.O. boxes exist, then create an array of that size. For each P.O. box, you should keep track of whether it has been reserved, and the name of the person who reserved it (if any). Create a class that represents a POBox. Display a menu that offers the following choices:
+
+<ul>
+	<li>Determine whether a specific box has been reserved. If so, report the name of the person who reserved it.</li>
+	<li>Reserve a box for a new customer. Find a free box and assign it to this person.</li>
+	<li>Release a box. This will be done when a customer no longer wants his or her box. The box numbers of all other customers must stay the same.</li>
+	<li>Expand the set of boxes. Ask the user for a new, larger number of boxes and create an array of that new size. Transfer all information from the old array to the new one, taking care to keep each person&#39;s box number the same.</li>
+</ul>
+//-->
+<h3>Problem 6</h3>
+
+<p>A magic number is defined as a positive integer which is equal to the sum of its own factors (except itself). For example, 6 is a magic number because its factors (other than 6 itself) are 1, 2, and 3, and these factors sum up to 6. Write a program that, for any upper limit, computes all magic numbers less than that limit. For the purposes of this problem, assume that Java variables can store numbers of any size.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
